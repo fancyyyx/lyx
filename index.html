@@ -1,0 +1,36 @@
+<!DOCTYPE html>    
+<html lang="zh-CN">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>图片浏览</title>    
+    <link rel="stylesheet" href="styles/styles.css"> <!-- 引入外部CSS样式表 -->  
+</head>    
+<body>    
+    <h1>图片编辑</h1>    
+    <div class="gallery">    
+        <div class="gallery-large">    
+            <img id="large-image" src="images/img1.jpg" alt="当前大图预览"   
+                 onerror="this.src='images/placeholder.jpg'; this.alt='图片加载失败';"> <!-- 大图预览，加载失败时显示占位图 -->  
+        </div>    
+        <p>选择以下图片进行编辑</p>    
+        <div class="gallery-thumbnails">    
+            <!-- 缩略图列表，每个图片都带有data-large属性，存储对应的大图路径 -->  
+            <img class="thumbnail" src="images/img1.jpg" alt="小图1" data-large="images/img1.jpg">    
+            <img class="thumbnail" src="images/img2.jpg" alt="小图2" data-large="images/img2.jpg">    
+            <img class="thumbnail" src="images/img3.jpg" alt="小图3" data-large="images/img3.jpg">    
+            <img class="thumbnail" src="images/img4.jpg" alt="小图4" data-large="images/img4.jpg">    
+        </div>    
+    </div>    
+    
+    <div class="controls">    
+        <!-- 图片编辑控制按钮 -->  
+        <button id="brightness-up" aria-label="增加图片亮度">变亮</button>    
+        <button id="brightness-down" aria-label="减少图片亮度">变暗</button>    
+        <button id="blur-image" aria-label="使图片变模糊">变模糊</button>    
+        <button id="sharpen-image" aria-label="使图片变高清">变高清</button>    
+    </div>    
+        
+    <script src="scripts/script.js"></script> <!-- 引入外部JavaScript脚本 -->  
+</body>    
+</html>
