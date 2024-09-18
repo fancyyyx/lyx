@@ -1,0 +1,97 @@
+/* styles.css */  
+  
+/* 设置全局样式 */  
+html {  
+    font-size: 10px; /* 设置基础字体大小为10px */  
+    font-family: 'Open Sans', sans-serif; /* 设置全局字体为'Open Sans'。*/  
+    background-color: #00539F; /* 设置HTML背景颜色为深蓝色 */  
+}  
+  
+/* 设置body的样式 */  
+body {  
+    width: 600px; /* 设置body的宽度为600px */  
+    margin: 0 auto; /* 上下边距为0，左右自动边距使body居中 */  
+    background-color: #FF9500; /* 设置body的背景颜色为橙色 */  
+    padding: 0 20px 20px 20px; /* 设置内边距，上下各20px，左右也各20px */  
+    border: 5px solid black; /* 设置body边框为5px实线黑色 */  
+}  
+  
+/* 画廊容器样式 */  
+.gallery {    
+    display: flex; /* 使用flex布局 */  
+    flex-direction: column; /* 设置flex子项为列排列 */  
+    align-items: center; /* 在交叉轴（这里是水平轴）上居中对齐子项 */  
+    width: 100%; /* 设置画廊容器宽度为100% */  
+}  
+  
+/* 大图片样式 */  
+.gallery-large img {    
+    width: 600px; /* 设置大图片宽度为600px */  
+    height: auto; 
+    display: block; /* 使图片以块级元素显示 */  
+    margin-bottom: 20px; /* 设置图片下方的外边距为20px */  
+    position: relative; /* 设置图片的定位为相对定位 */  
+    border-radius: 8px; /* 设置图片边框圆角为8px */  
+}  
+  
+/* 缩略图容器样式 */  
+.gallery-thumbnails {    
+    display: flex; /* 使用flex布局 */  
+    justify-content: center; /* 在主轴上居中对齐子项 */  
+    gap: 10px; /* 设置子项之间的间隔为10px */  
+    margin-top: 20px; /* 设置容器顶部的外边距为20px */  
+}  
+  
+/* 缩略图样式 */  
+.thumbnail {    
+    width: 100px; /* 设置缩略图宽度为100px */  
+    height: auto; /* 设置缩略图高度为自动，保持宽高比 */  
+    cursor: pointer; /* 设置鼠标悬停时的指针为手指形状，表示可点击 */  
+    transition: opacity 0.3s ease; /* 设置透明度变化的过渡效果 */  
+    border-radius: 4px; /* 设置缩略图边框圆角为4px */  
+}  
+  
+/* 缩略图悬停时的样式 */  
+.thumbnail:hover {    
+    opacity: 0.7; /* 设置悬停时的透明度为0.7 */  
+}  
+  
+/* 控制按钮容器样式 */  
+.controls {    
+    margin-top: 20px; /* 设置容器顶部的外边距为20px */  
+    text-align: center; /* 设置容器内文本居中对齐 */  
+}  
+  
+/* 控制按钮样式 */  
+.controls button {    
+    margin-right: 10px; /* 设置按钮右侧的外边距为10px */  
+    padding: 10px 20px; /* 设置按钮的内边距 */  
+    cursor: pointer; /* 设置鼠标悬停时的指针为手指形状，表示可点击 */  
+    background-color: #007bff; /* 设置按钮的背景颜色为蓝色 */  
+    color: #fff; /* 设置按钮的文字颜色为白色 */  
+    border: none; /* 移除按钮的边框 */  
+    border-radius: 4px; /* 设置按钮边框圆角为4px */  
+    transition: background-color 0.3s ease; /* 设置背景颜色变化的过渡效果 */  
+}  
+  
+/* 控制按钮悬停时的样式 */  
+.controls button:hover {    
+    background-color: #0056b3; /* 设置悬停时按钮的背景颜色为深蓝色 */  
+}  
+  
+/* 标题样式 */  
+h1 {  
+    font-size: 60px; /* 设置标题字体大小为60px */  
+    text-align: center; /* 设置标题文本居中对齐 */  
+    margin: 0; /* 移除标题的外边距 */  
+    padding: 20px 0; /* 设置标题的上下内边距为20px */  
+    color: #00539F; /* 设置标题的字体颜色为深蓝色 */  
+    text-shadow: 3px 3px 1px black; /* 设置标题的文字阴影效果 */  
+}  
+  
+/* 段落文本样式 */  
+p {    
+    color: #495057; /* 设置段落文本的字体颜色为深灰色 */  
+    text-align: center; /* 设置段落文本居中对齐 */  
+    margin-bottom: 20px; /* 设置段落文本下方的外边距为20px */  
+}
